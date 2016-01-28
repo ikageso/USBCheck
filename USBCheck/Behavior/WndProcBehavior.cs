@@ -81,7 +81,7 @@ namespace USBCheck.Behavior
             // デバイス一覧取得
             var devList = MakeDeviceList();
 
-            // ビデオキャプチャのUSBは接続されているか？
+            // 対象のUSBは接続されているか？
             DetectedUSB = devList.Any(x => x.Contains(_DescriptionUSB));
         }
 
